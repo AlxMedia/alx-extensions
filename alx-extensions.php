@@ -3,7 +3,7 @@
 Plugin Name: Alx Extensions
 Plugin URI: http://wordpress.org/plugins/alx-extensions/
 Description: Adds social share links to articles
-Version: 1.0.0
+Version: 1.0.1
 Author: Alexander Agnarson
 Author URI: http://alxmedia.se
 Text Domain: alx-extensions
@@ -33,7 +33,7 @@ add_action( 'plugins_loaded', 'alx_ext_sharrre_actions' );
 /* template */
 function alx_ext_sharrre_template() { ?>
 
-<div class="sharrre-container">
+<div class="sharrre-container group">
 	<span><?php esc_html_e('Share','alx-extensions'); ?></span>
 	<div id="twitter" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="<?php esc_html_e('Tweet', 'alx-extensions'); ?>"></div>
 	<div id="facebook" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="<?php esc_html_e('Like', 'alx-extensions'); ?>"></div>
@@ -48,7 +48,7 @@ function alx_ext_sharrre_template() { ?>
 			share: {
 				twitter: true
 			},
-			template: '<a class="box" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-twitter"></i></div></a>',
+			template: '<a class="box group" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-twitter"></i></div></a>',
 			enableHover: false,
 			enableTracking: true,
 			buttons: { twitter: {via: '<?php echo esc_attr( get_theme_mod('twitter-username') ); ?>'}},
@@ -61,7 +61,7 @@ function alx_ext_sharrre_template() { ?>
 			share: {
 				facebook: true
 			},
-			template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-facebook-square"></i></div></a>',
+			template: '<a class="box group" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-facebook-square"></i></div></a>',
 			enableHover: false,
 			enableTracking: true,
 			buttons:{layout: 'box_count'},
@@ -74,7 +74,7 @@ function alx_ext_sharrre_template() { ?>
 			share: {
 				pinterest: true
 			},
-			template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-pinterest"></i></div></a>',
+			template: '<a class="box group" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-pinterest"></i></div></a>',
 			enableHover: false,
 			enableTracking: true,
 			buttons: {
@@ -91,7 +91,7 @@ function alx_ext_sharrre_template() { ?>
 			share: {
 				linkedin: true
 			},
-			template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-linkedin-square"></i></div></a>',
+			template: '<a class="box group" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-linkedin-square"></i></div></a>',
 			enableHover: false,
 			enableTracking: true,
 			buttons: {
