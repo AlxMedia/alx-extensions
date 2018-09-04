@@ -18,6 +18,7 @@ define( 'ALX_EXTENSIONS_DIR', rtrim( plugin_dir_path( __FILE__ ), '/' ) );
 define( 'ALX_EXTENSIONS_URL', rtrim( plugin_dir_url( __FILE__ ), '/' ) );
 
 require_once ALX_EXTENSIONS_DIR . '/inc/share.php';
+require_once ALX_EXTENSIONS_DIR . '/inc/post-formats.php';
 
 /* load plugin textdomain */
 function alx_ext_load_textdomain() {
@@ -34,6 +35,13 @@ function alx_ext_enqueue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'alx_ext_enqueue_scripts' );
+
+/* enqueue admin scripts */
+function alx_ext_enqueue_admin_scripts() {
+	wp_enqueue_script( 'alx-ext-post-formats', ALX_EXTENSIONS_URL . '/js/post-formats.js', array( 'jquery' ), '1.0.0' );
+}
+
+add_action( 'admin_enqueue_scripts', 'alx_ext_enqueue_admin_scripts' );
 
 /*  Upscale cropped thumbnails */
 function alx_ext_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, $crop ) {
