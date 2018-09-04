@@ -30,15 +30,17 @@ add_action( 'init', 'alx_ext_load_textdomain' );
 /* enqueue scripts */
 function alx_ext_enqueue_scripts() {
 	if ( is_singular() ) {
-		wp_enqueue_script( 'alx-ext-sharrre', ALX_EXTENSIONS_URL . '/js/jquery.sharrre.min.js', array( 'jquery' ), '1.0.0' );
+		wp_enqueue_script( 'alx-ext-sharrre', ALX_EXTENSIONS_URL . '/js/jquery.sharrre.min.js', array( 'jquery' ), '1.0.1' );
 	}
 }
 
 add_action( 'wp_enqueue_scripts', 'alx_ext_enqueue_scripts' );
 
 /* enqueue admin scripts */
-function alx_ext_enqueue_admin_scripts() {
-	wp_enqueue_script( 'alx-ext-post-formats', ALX_EXTENSIONS_URL . '/js/post-formats.js', array( 'jquery' ), '1.0.0' );
+function alx_ext_enqueue_admin_scripts( $hook ) {
+	if ( in_array( $hook, array( 'post.php', 'post-new.php' ) ) ) {
+		wp_enqueue_script( 'alx-ext-post-formats', ALX_EXTENSIONS_URL . '/js/post-formats.js', array( 'jquery' ), '1.0.1' );
+	}
 }
 
 add_action( 'admin_enqueue_scripts', 'alx_ext_enqueue_admin_scripts' );
