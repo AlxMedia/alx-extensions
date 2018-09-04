@@ -17,9 +17,9 @@ define( 'ALX_EXTENSIONS_BASENAME', basename( dirname( __FILE__ ) ) );
 define( 'ALX_EXTENSIONS_DIR', rtrim( plugin_dir_path( __FILE__ ), '/' ) );
 define( 'ALX_EXTENSIONS_URL', rtrim( plugin_dir_url( __FILE__ ), '/' ) );
 
+require_once ALX_EXTENSIONS_DIR . '/inc/options.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/share.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/post-formats.php';
-require_once ALX_EXTENSIONS_DIR . '/inc/sidebar.php';
 
 /* load plugin textdomain */
 function alx_ext_load_textdomain() {
@@ -62,4 +62,8 @@ function alx_ext_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, 
 	return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
 }
 
-add_filter( 'image_resize_dimensions', 'alx_ext_thumbnail_upscale', 10, 6 );
+$enable_image_upscale = get_theme_mod( 'enable_image_upscale', true );
+if ( true === $enable_image_upscale ) {
+	add_filter( 'image_resize_dimensions', 'alx_ext_thumbnail_upscale', 10, 6 );
+}
+
