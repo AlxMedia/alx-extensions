@@ -17,9 +17,9 @@ define( 'ALX_EXTENSIONS_BASENAME', basename( dirname( __FILE__ ) ) );
 define( 'ALX_EXTENSIONS_DIR', rtrim( plugin_dir_path( __FILE__ ), '/' ) );
 define( 'ALX_EXTENSIONS_URL', rtrim( plugin_dir_url( __FILE__ ), '/' ) );
 
+require_once ALX_EXTENSIONS_DIR . '/inc/options.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/share.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/post-formats.php';
-require_once ALX_EXTENSIONS_DIR . '/inc/sidebar.php';
 
 /* load plugin textdomain */
 function alx_ext_load_textdomain() {
