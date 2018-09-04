@@ -62,4 +62,8 @@ function alx_ext_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, 
 	return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
 }
 
-add_filter( 'image_resize_dimensions', 'alx_ext_thumbnail_upscale', 10, 6 );
+$enable_image_upscale = get_theme_mod( 'enable_image_upscale', true );
+if ( true === $enable_image_upscale ) {
+	add_filter( 'image_resize_dimensions', 'alx_ext_thumbnail_upscale', 10, 6 );
+}
+

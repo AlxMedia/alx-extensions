@@ -6,7 +6,13 @@ function alx_ext_sharrre_actions() {
 add_action( 'plugins_loaded', 'alx_ext_sharrre_actions' );
 
 /* template */
-function alx_ext_sharrre_template() { ?>
+function alx_ext_sharrre_template() {
+
+	$enable_social_share = get_theme_mod( 'enable_social_share', true );
+	if ( true !== $enable_social_share ) {
+		return;
+	}
+	?>
 
 	<div class="sharrre-container group">
 		<span><?php esc_html_e('Share','alx-extensions'); ?></span>
