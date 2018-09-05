@@ -4,17 +4,23 @@ Contributors: alxmedia
 Tags:
 Requires at least: 4.9
 Tested up to: 4.9
-Stable tag: 1.0.1
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 1.0.2
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Adds social share links to articles
+Extends AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes.
 
 == Description ==
 
-Adds social share links to articles
+Extends AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes.
 
 == Changelog ==
+
+= 1.0.2 - 2018-09-05 =
+* Move sidebar creation to plugin
+* Move image upscale function to plugin
+* Move post format meta boxes to plugin
+* Improve options with on/off settings in the "Theme Extensions" live customizer section
 
 = 1.0.1 - 2018-05-31 =
 * Change markup to fit with all themes

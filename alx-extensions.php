@@ -2,14 +2,14 @@
 /*
 Plugin Name: Alx Extensions
 Plugin URI: http://wordpress.org/plugins/alx-extensions/
-Description: Adds social share links to articles
-Version: 1.0.1
+Description: Extends AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes. 
+Version: 1.0.2
 Author: Alexander Agnarson
 Author URI: http://alxmedia.se
 Text Domain: alx-extensions
 Domain Path: /languages
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
 
 define( 'ALX_EXTENSIONS_SLUG', 'alx-extensions' );
