@@ -30,6 +30,15 @@ function alx_ext_custom_options() {
 		'section'		=> 'alx_extensions_social',
 		'default'		=> 'on',
 	) );
+	
+	Kirki::add_field( 'twitter_username', array(
+		'type'			=> 'text',
+		'settings'		=> 'twitter-username',
+		'label'			=> esc_html__( 'Twitter Username', 'alx-extensions' ),
+		'description'	=> esc_html__( 'Your @username will be added to share-tweets of your posts (optional)', 'alx-extensions' ),
+		'section'		=> 'alx_extensions_social',
+		'default'		=> '',
+	) ); 
 
 	Kirki::add_section( 'alx_extensions_upscale', array(
 		'priority'    => 10,
