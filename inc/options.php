@@ -25,7 +25,7 @@ function alx_ext_custom_options() {
 
 	Kirki::add_field( 'enable_social_share', array(
 		'type'			=> 'switch',
-		'settings'		=> 'enable_social_share',
+		'settings'		=> 'enable-social-share',
 		'label'			=> esc_html__( 'Enable Social Share', 'alx-extensions' ),
 		'section'		=> 'alx_extensions_social',
 		'default'		=> 'on',
@@ -48,7 +48,7 @@ function alx_ext_custom_options() {
 
 	Kirki::add_field( 'enable_image_upscale', array(
 		'type'			=> 'switch',
-		'settings'		=> 'enable_image_upscale',
+		'settings'		=> 'enable-image-upscale',
 		'label'			=> esc_html__( 'Enable Image Upscale', 'alx-extensions' ),
 		'section'		=> 'alx_extensions_upscale',
 		'default'		=> 'on',
