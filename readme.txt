@@ -16,6 +16,9 @@ Extends AlxMedia themes with additional features such as social share links, cus
 
 == Changelog ==
 
+= 1.0.3 - 2018-09-10 =
+* Update version
+
 = 1.0.2 - 2018-09-05 =
 * Move sidebar creation to plugin
 * Move image upscale function to plugin
