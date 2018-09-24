@@ -4,17 +4,20 @@ Contributors: alxmedia
 Tags:
 Requires at least: 4.9
 Tested up to: 4.9
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Extends AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes.
+Extends free AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes. 
 
 == Description ==
 
-Extends AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes.
+Extends free AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes. 
 
 == Changelog ==
+
+= 1.0.4 - 2018-09-24 =
+* Update .pot language file
 
 = 1.0.3 - 2018-09-10 =
 * Update version
