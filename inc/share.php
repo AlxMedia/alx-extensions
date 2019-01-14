@@ -14,7 +14,7 @@ function alx_ext_sharrre_template() {
 	}
 	?>
 
-	<div class="sharrre-container group">
+	<div class="sharrre-container sharrre-header group">
 		<span><?php esc_html_e('Share','alx-extensions'); ?></span>
 		<div id="twitter" data-url="<?php the_permalink(); ?>" data-text="<?php echo the_title_attribute(); ?>" data-title="<?php esc_attr_e('Tweet', 'alx-extensions'); ?>"></div>
 		<div id="facebook" data-url="<?php the_permalink(); ?>" data-text="<?php echo the_title_attribute(); ?>" data-title="<?php esc_attr_e('Like', 'alx-extensions'); ?>"></div>

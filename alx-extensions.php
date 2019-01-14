@@ -19,6 +19,7 @@ define( 'ALX_EXTENSIONS_URL', rtrim( plugin_dir_url( __FILE__ ), '/' ) );
 
 require_once ALX_EXTENSIONS_DIR . '/inc/options.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/share.php';
+require_once ALX_EXTENSIONS_DIR . '/inc/share-footer.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/post-formats.php';
 
 /* load plugin textdomain */
