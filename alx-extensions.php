@@ -2,11 +2,11 @@
 /*
 Plugin Name: Alx Extensions
 Plugin URI: http://wordpress.org/plugins/alx-extensions/
-Description: Extends free AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes. 
-Version: 1.0.4
+Description: Extends AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes. Also includes 2 flexible custom widgets, Alx Tabs and Alx Posts.
+Version: 1.0.5
 Author: Alexander Agnarson
 Author URI: http://alxmedia.se
-Text Domain: alx-extensions
+Text Domain: alx
 Domain Path: /languages
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -21,15 +21,21 @@ require_once ALX_EXTENSIONS_DIR . '/inc/options.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/share.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/share-footer.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/post-formats.php';
+require_once ALX_EXTENSIONS_DIR . '/inc/widgets/alx-posts.php';
+require_once ALX_EXTENSIONS_DIR . '/inc/widgets/alx-tabs.php';
 
-/* load plugin textdomain */
+
+/*  Load plugin textdomain
+/* ------------------------------------ */
 function alx_ext_load_textdomain() {
-	load_plugin_textdomain( 'alx-extensions', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+	load_plugin_textdomain( 'alx', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 
 add_action( 'init', 'alx_ext_load_textdomain' );
 
-/* enqueue scripts */
+
+/*  Enqueue scripts
+/* ------------------------------------ */
 function alx_ext_enqueue_scripts() {
 	if ( is_singular() ) {
 		wp_enqueue_script( 'alx-ext-sharrre', ALX_EXTENSIONS_URL . '/js/jquery.sharrre.min.js', array( 'jquery' ), '1.0.1' );
@@ -38,7 +44,9 @@ function alx_ext_enqueue_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'alx_ext_enqueue_scripts' );
 
-/* enqueue admin scripts */
+
+/*  Enqueue admin scripts
+/* ------------------------------------ */
 function alx_ext_enqueue_admin_scripts( $hook ) {
 	if ( in_array( $hook, array( 'post.php', 'post-new.php' ) ) ) {
 		wp_enqueue_script( 'alx-ext-post-formats', ALX_EXTENSIONS_URL . '/js/post-formats.js', array( 'jquery' ), '1.0.1' );
@@ -47,7 +55,21 @@ function alx_ext_enqueue_admin_scripts( $hook ) {
 
 add_action( 'admin_enqueue_scripts', 'alx_ext_enqueue_admin_scripts' );
 
-/*  Upscale cropped thumbnails */
+
+/*  Enqueue admin widgets css
+/* ------------------------------------ */
+function alx_ext_admin_widgets_css( $hook ) {
+	if ( 'widgets.php' != $hook ) {
+		return;
+	}
+	wp_enqueue_style( 'alx-ext-admin-widgets', ALX_EXTENSIONS_URL . '/inc/widgets/widgets.css' );
+}
+
+add_action( 'admin_enqueue_scripts', 'alx_ext_admin_widgets_css' );
+
+
+/*  Upscale cropped thumbnails
+/* ------------------------------------ */
 function alx_ext_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, $crop ) {
 	if ( !$crop ) return null; // let the wordpress default function handle this
 
@@ -69,7 +91,8 @@ if ( true === $enable_image_upscale ) {
 }
 
 
-
+/*  Register custom sidebars
+/* ------------------------------------ */
 function alx_ext_register_custom_sidebars() {
 	if ( !get_theme_mod('sidebar-areas') =='' ) {
 
@@ -85,5 +108,39 @@ function alx_ext_register_custom_sidebars() {
 	}
 }
 
-
 add_action( 'widgets_init', 'alx_ext_register_custom_sidebars', 11 );
+
+
+/*  Custom widgets
+/* ------------------------------------ */
+
+/* backwards compatibility (stop 2 of same widgets from loading)*/
+
+/* alx-posts */
+function roundtype_register_widget_posts() { }
+function agnar_register_widget_posts() { }
+function writeup_register_widget_posts() { }
+function split_register_widget_posts() { }
+function enspire_register_widget_posts() { }
+function typecore_register_widget_posts() { }
+function kontrast_register_widget_posts() { }
+function slanted_register_widget_posts() { }
+function magaziner_register_widget_posts() { }
+function blogside_register_widget_posts() { }
+function blogrow_register_widget_posts() { }
+function anew_register_widget_posts() { }
+
+/* alx-tabs */
+function roundtype_register_widget_tabs() { }
+function agnar_register_widget_tabs() { }
+function writeup_register_widget_tabs() { }
+function split_register_widget_tabs() { }
+function enspire_register_widget_tabs() { }
+function typecore_register_widget_tabs() { }
+function kontrast_register_widget_tabs() { }
+function slanted_register_widget_tabs() { }
+function magaziner_register_widget_tabs() { }
+function blogside_register_widget_tabs() { }
+function blogrow_register_widget_tabs() { }
+function anew_register_widget_tabs() { }
+

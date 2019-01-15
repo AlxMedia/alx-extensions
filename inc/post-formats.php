@@ -9,7 +9,7 @@ function alx_ext_post_formats_meta_box( $meta_boxes ) {
 	/* ------------------------------------ */
 	$meta_boxes[] = array(
 		'id' => 'format-audio',
-		'title' => esc_html__( 'Format: Audio', 'alx-extensions' ),
+		'title' => esc_html__( 'Format: Audio', 'alx' ),
 		'post_types' => array( 'post' ),
 		'context' => 'advanced',
 		'priority' => 'high',
@@ -18,7 +18,7 @@ function alx_ext_post_formats_meta_box( $meta_boxes ) {
 			array(
 				'id' => $prefix . 'audio_url',
 				'type' => 'text',
-				'name' => esc_html__( 'Audio URL', 'alx-extensions' ),
+				'name' => esc_html__( 'Audio URL', 'alx' ),
 			),
 		),
 	);
@@ -27,7 +27,7 @@ function alx_ext_post_formats_meta_box( $meta_boxes ) {
 	/* ------------------------------------ */
 	$meta_boxes[] = array(
 		'id' => 'format-video',
-		'title' => esc_html__( 'Format: Video', 'alx-extensions' ),
+		'title' => esc_html__( 'Format: Video', 'alx' ),
 		'post_types' => array( 'post' ),
 		'context' => 'advanced',
 		'priority' => 'high',
@@ -36,7 +36,7 @@ function alx_ext_post_formats_meta_box( $meta_boxes ) {
 			array(
 				'id' => $prefix . 'video_url',
 				'type' => 'text',
-				'name' => esc_html__( 'Video URL', 'alx-extensions' ),
+				'name' => esc_html__( 'Video URL', 'alx' ),
 			),
 		),
 	);
