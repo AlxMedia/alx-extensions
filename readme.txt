@@ -20,6 +20,8 @@ Extends AlxMedia themes with additional features such as social share links, cus
 * Update .pot language file
 * Add alx_ext_sharrre_footer action and template
 * Add sharrre-header css class for compatibility
+* Add 2 custom widgets, alx posts and alx tabs
+* Change text domain to alx instead of alx-extensions
 
 = 1.0.4 - 2018-09-24 =
 * Update .pot language file
