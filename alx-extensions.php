@@ -110,37 +110,3 @@ function alx_ext_register_custom_sidebars() {
 
 add_action( 'widgets_init', 'alx_ext_register_custom_sidebars', 11 );
 
-
-/*  Custom widgets
-/* ------------------------------------ */
-
-/* backwards compatibility (stop 2 of same widgets from loading)*/
-
-/* alx-posts */
-function roundtype_register_widget_posts() { }
-function agnar_register_widget_posts() { }
-function writeup_register_widget_posts() { }
-function split_register_widget_posts() { }
-function enspire_register_widget_posts() { }
-function typecore_register_widget_posts() { }
-function kontrast_register_widget_posts() { }
-function slanted_register_widget_posts() { }
-function magaziner_register_widget_posts() { }
-function blogside_register_widget_posts() { }
-function blogrow_register_widget_posts() { }
-function anew_register_widget_posts() { }
-
-/* alx-tabs */
-function roundtype_register_widget_tabs() { }
-function agnar_register_widget_tabs() { }
-function writeup_register_widget_tabs() { }
-function split_register_widget_tabs() { }
-function enspire_register_widget_tabs() { }
-function typecore_register_widget_tabs() { }
-function kontrast_register_widget_tabs() { }
-function slanted_register_widget_tabs() { }
-function magaziner_register_widget_tabs() { }
-function blogside_register_widget_tabs() { }
-function blogrow_register_widget_tabs() { }
-function anew_register_widget_tabs() { }
-

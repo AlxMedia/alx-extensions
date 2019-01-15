@@ -16,7 +16,7 @@ class AlxPosts extends WP_Widget {
 /*  Constructor
 /* ------------------------------------ */
 	function __construct() {
-		parent::__construct( false, esc_html__( 'Alx Posts', 'alx' ), array('description' => esc_html__( 'Display posts from a category', 'alx' ), 'classname' => 'widget_alx_posts', 'customize_selective_refresh' => true ) );
+		parent::__construct( false, esc_html__( 'Alx Posts (plugin)', 'alx' ), array('description' => esc_html__( 'Display posts from a category', 'alx' ), 'classname' => 'widget_alx_posts', 'customize_selective_refresh' => true ) );
 	}
 
 	public function alx_get_defaults() {

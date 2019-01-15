@@ -16,7 +16,7 @@ class AlxTabs extends WP_Widget {
 /*  Constructor
 /* ------------------------------------ */
 	function __construct() {
-		parent::__construct( false, esc_html__( 'Alx Tabs', 'alx' ), array('description' => esc_html__('List posts, comments, and/or tags with or without tabs.', 'alx' ), 'classname' => 'widget_alx_tabs', 'customize_selective_refresh' => true ) );
+		parent::__construct( false, esc_html__( 'Alx Tabs (plugin)', 'alx' ), array('description' => esc_html__('List posts, comments, and/or tags with or without tabs.', 'alx' ), 'classname' => 'widget_alx_tabs', 'customize_selective_refresh' => true ) );
 	}
 
 	public function alx_get_defaults() {
