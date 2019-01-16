@@ -88,4 +88,26 @@ function alx_ext_custom_options() {
 			),
 		)
 	) );
+	
+	Kirki::add_section( 'alx_extensions_widgets', array(
+		'priority'    => 11,
+		'title'       => esc_html__( 'Custom Widgets', 'alx' ),
+		'panel'       => 'alx_extensions_panel',
+	) );
+	
+	Kirki::add_field( 'alx_posts', array(
+		'type'			=> 'switch',
+		'settings'		=> 'widget-alx-posts',
+		'label'			=> esc_html__( 'Alx Posts', 'alx' ),
+		'section'		=> 'alx_extensions_widgets',
+		'default'		=> 'on',
+	) );
+	
+	Kirki::add_field( 'alx_tabs', array(
+		'type'			=> 'switch',
+		'settings'		=> 'widget-alx-tabs',
+		'label'			=> esc_html__( 'Alx Tabs', 'alx' ),
+		'section'		=> 'alx_extensions_widgets',
+		'default'		=> 'on',
+	) );
 }

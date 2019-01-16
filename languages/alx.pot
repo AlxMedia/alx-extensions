@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Alx Extensions\n"
-"POT-Creation-Date: 2019-01-15 13:44+0100\n"
+"POT-Creation-Date: 2019-01-16 13:57+0100\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -83,6 +83,18 @@ msgstr ""
 msgid "This ID must be unique"
 msgstr ""
 
+#: inc/options.php:94
+msgid "Custom Widgets"
+msgstr ""
+
+#: inc/options.php:101
+msgid "Alx Posts"
+msgstr ""
+
+#: inc/options.php:109
+msgid "Alx Tabs"
+msgstr ""
+
 #: inc/post-formats.php:12
 msgid "Format: Audio"
 msgstr ""
@@ -129,7 +141,7 @@ msgid "Share on LinkedIn"
 msgstr ""
 
 #: inc/widgets/alx-posts.php:19
-msgid "Alx Posts"
+msgid "Alx Posts (plugin)"
 msgstr ""
 
 #: inc/widgets/alx-posts.php:19
@@ -217,7 +229,7 @@ msgid "Show dates"
 msgstr ""
 
 #: inc/widgets/alx-tabs.php:19
-msgid "Alx Tabs"
+msgid "Alx Tabs (plugin)"
 msgstr ""
 
 #: inc/widgets/alx-tabs.php:19

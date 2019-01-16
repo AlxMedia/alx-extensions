@@ -21,8 +21,6 @@ require_once ALX_EXTENSIONS_DIR . '/inc/options.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/share.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/share-footer.php';
 require_once ALX_EXTENSIONS_DIR . '/inc/post-formats.php';
-require_once ALX_EXTENSIONS_DIR . '/inc/widgets/alx-posts.php';
-require_once ALX_EXTENSIONS_DIR . '/inc/widgets/alx-tabs.php';
 
 
 /*  Load plugin textdomain
@@ -110,3 +108,12 @@ function alx_ext_register_custom_sidebars() {
 
 add_action( 'widgets_init', 'alx_ext_register_custom_sidebars', 11 );
 
+
+/*  Custom widgets
+/* ------------------------------------ */
+if ( get_theme_mod( 'widget-alx-posts', 'on' ) == 'on') {
+	require_once ALX_EXTENSIONS_DIR . '/inc/widgets/alx-posts.php';
+}
+if ( get_theme_mod( 'widget-alx-tabs', 'on' ) == 'on') {
+	require_once ALX_EXTENSIONS_DIR . '/inc/widgets/alx-tabs.php';
+}
