@@ -4,7 +4,7 @@ Contributors: alxmedia
 Tags:
 Requires at least: 5.0
 Tested up to: 5.0
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,6 +15,12 @@ Extends AlxMedia themes with additional features such as social share links, cus
 Extends AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes. Also includes 2 flexible custom widgets, Alx Tabs and Alx Posts.
 
 == Changelog ==
+
+= 1.0.6 - 2019-01-19 =
+* Update .pot language file
+* Add options to disable meta boxes
+* Re-order and clear up options code
+* Remove "(plugin)" from custom widget titles
 
 = 1.0.5 - 2019-01-14 =
 * Update .pot language file
