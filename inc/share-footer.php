@@ -39,7 +39,7 @@ function alx_ext_sharrre_footer_template() {
 				share: {
 					facebook: true
 				},
-				template: '<a class="box group" href="#"><div class="share"><i class="fa fa-facebook-square"></i><?php esc_html_e('Share', 'alx'); ?> <span><?php esc_html_e('on Facebook', 'alx'); ?></span><div class="count" href="#">{total}</div></div></a>',
+				template: '<a class="box group" href="#"><div class="share"><i class="fa fa-facebook-square"></i><?php esc_html_e('Share', 'alx'); ?> <span><?php esc_html_e('on Facebook', 'alx'); ?></span><div class="count" href="#"><i class="fa fa-plus"></i></div></div></a>',
 				enableHover: false,
 				enableTracking: true,
 				buttons:{layout: 'box_count'},
