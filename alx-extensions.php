@@ -3,7 +3,7 @@
 Plugin Name: Alx Extensions
 Plugin URI: http://wordpress.org/plugins/alx-extensions/
 Description: Extends AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes. Also includes 2 flexible custom widgets, Alx Tabs and Alx Posts.
-Version: 1.0.7
+Version: 1.0.8
 Author: Alexander Agnarson
 Author URI: http://alxmedia.se
 Text Domain: alx
