@@ -3,8 +3,8 @@
 Contributors: alxmedia
 Tags:
 Requires at least: 4.9
-Tested up to: 5.0
-Stable tag: 1.0.9
+Tested up to: 5.3.2
+Stable tag: 1.1.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,6 +15,10 @@ Extends AlxMedia themes with additional features such as social share links, cus
 Extends AlxMedia themes with additional features such as social share links, custom sidebars, thumbnail image upscale and post format meta boxes. Also includes 2 flexible custom widgets, Alx Tabs and Alx Posts.
 
 == Changelog ==
+
+= 1.1.0 - 2020-03-21 =
+* Update author link
+* Update tested up to version 
 
 = 1.0.9 - 2019-06-14 =
 * Fix broken LinkedIn button
