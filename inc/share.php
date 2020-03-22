@@ -29,7 +29,7 @@ function alx_ext_sharrre_template() {
 				share: {
 					twitter: true
 				},
-				template: '<a class="box group" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-twitter"></i></div></a>',
+				template: '<a class="box group" href="#"><div class="count" href="#"><i class="fas fa-plus"></i></div><div class="share"><i class="fab fa-twitter"></i></div></a>',
 				enableHover: false,
 				enableTracking: true,
 				buttons: { twitter: {via: '<?php echo esc_attr( get_theme_mod('twitter-username') ); ?>'}},
@@ -42,7 +42,7 @@ function alx_ext_sharrre_template() {
 				share: {
 					facebook: true
 				},
-				template: '<a class="box group" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-facebook-square"></i></div></a>',
+				template: '<a class="box group" href="#"><div class="count" href="#"><i class="fas fa-plus"></i></div><div class="share"><i class="fab fa-facebook-square"></i></div></a>',
 				enableHover: false,
 				enableTracking: true,
 				buttons:{layout: 'box_count'},
@@ -55,7 +55,7 @@ function alx_ext_sharrre_template() {
 				share: {
 					pinterest: true
 				},
-				template: '<a class="box group" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-pinterest"></i></div></a>',
+				template: '<a class="box group" href="#"><div class="count" href="#"><i class="fas fa-plus"></i></div><div class="share"><i class="fab fa-pinterest"></i></div></a>',
 				enableHover: false,
 				enableTracking: true,
 				buttons: {
@@ -72,7 +72,7 @@ function alx_ext_sharrre_template() {
 				share: {
 					linkedin: true
 				},
-				template: '<a class="box group" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-linkedin-square"></i></div></a>',
+				template: '<a class="box group" href="#"><div class="count" href="#"><i class="fas fa-plus"></i></div><div class="share"><i class="fab fa-linkedin"></i></div></a>',
 				enableHover: false,
 				enableTracking: true,
 				buttons: {

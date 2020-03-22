@@ -26,7 +26,7 @@ function alx_ext_sharrre_footer_template() {
 				share: {
 					twitter: true
 				},
-				template: '<a class="box group" href="#"><div class="share"><i class="fa fa-twitter"></i><?php esc_html_e('Share', 'alx'); ?> <span><?php esc_html_e('on Twitter', 'alx'); ?></span><div class="count" href="#"><i class="fa fa-plus"></i></div></div></a>',
+				template: '<a class="box group" href="#"><div class="share"><i class="fab fa-twitter"></i><?php esc_html_e('Share', 'alx'); ?> <span><?php esc_html_e('on Twitter', 'alx'); ?></span><div class="count" href="#"><i class="fas fa-plus"></i></div></div></a>',
 				enableHover: false,
 				enableTracking: true,
 				buttons: { twitter: {via: '<?php echo esc_attr( get_theme_mod('twitter-username') ); ?>'}},
@@ -39,7 +39,7 @@ function alx_ext_sharrre_footer_template() {
 				share: {
 					facebook: true
 				},
-				template: '<a class="box group" href="#"><div class="share"><i class="fa fa-facebook-square"></i><?php esc_html_e('Share', 'alx'); ?> <span><?php esc_html_e('on Facebook', 'alx'); ?></span><div class="count" href="#"><i class="fa fa-plus"></i></div></div></a>',
+				template: '<a class="box group" href="#"><div class="share"><i class="fab fa-facebook-square"></i><?php esc_html_e('Share', 'alx'); ?> <span><?php esc_html_e('on Facebook', 'alx'); ?></span><div class="count" href="#"><i class="fas fa-plus"></i></div></div></a>',
 				enableHover: false,
 				enableTracking: true,
 				buttons:{layout: 'box_count'},
